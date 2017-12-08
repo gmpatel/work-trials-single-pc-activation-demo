@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SinglePcActivationDemoDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueId" Type="uniqueidentifier" />
+          <Property Name="UserEmail" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="UserPassword" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="IsEmailVerified" Type="bit" Nullable="false" />
+          <Property Name="Activated" Type="bit" Nullable="false" />
+          <Property Name="ActivatedMachineKey" Type="nvarchar" MaxLength="512" />
+          <Property Name="ActivatedDateTime" Type="datetime" />
+          <Property Name="MoreColumn1" Type="bit" />
+          <Property Name="MoreColumn2" Type="datetime" />
+          <Property Name="MoreColumn3" Type="bit" />
+          <Property Name="MoreColumn4" Type="datetime" />
+          <Property Name="MoreColumn5" Type="datetime" />
+          <Property Name="DateTimeCreated" Type="datetime" />
+          <Property Name="DateTimeLastModified" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="SinglePcActivationDemoDbModelStoreContainer">
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SinglePcActivationDemoDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="SinglePcActivationDemoDbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="SinglePcActivationDemoDbModel.User" />
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueId" Type="Guid" />
+          <Property Name="UserEmail" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="UserPassword" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="IsEmailVerified" Type="Boolean" Nullable="false" />
+          <Property Name="Activated" Type="Boolean" Nullable="false" />
+          <Property Name="ActivatedMachineKey" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="ActivatedDateTime" Type="DateTime" Precision="3" />
+          <Property Name="MoreColumn1" Type="Boolean" />
+          <Property Name="MoreColumn2" Type="DateTime" Precision="3" />
+          <Property Name="MoreColumn3" Type="Boolean" />
+          <Property Name="MoreColumn4" Type="DateTime" Precision="3" />
+          <Property Name="MoreColumn5" Type="DateTime" Precision="3" />
+          <Property Name="DateTimeCreated" Type="DateTime" Precision="3" />
+          <Property Name="DateTimeLastModified" Type="DateTime" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SinglePcActivationDemoDbModelStoreContainer" CdmEntityContainer="SinglePcActivationDemoDbEntities">
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="SinglePcActivationDemoDbModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="DateTimeLastModified" ColumnName="DateTimeLastModified" />
+                <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+                <ScalarProperty Name="MoreColumn5" ColumnName="MoreColumn5" />
+                <ScalarProperty Name="MoreColumn4" ColumnName="MoreColumn4" />
+                <ScalarProperty Name="MoreColumn3" ColumnName="MoreColumn3" />
+                <ScalarProperty Name="MoreColumn2" ColumnName="MoreColumn2" />
+                <ScalarProperty Name="MoreColumn1" ColumnName="MoreColumn1" />
+                <ScalarProperty Name="ActivatedDateTime" ColumnName="ActivatedDateTime" />
+                <ScalarProperty Name="ActivatedMachineKey" ColumnName="ActivatedMachineKey" />
+                <ScalarProperty Name="Activated" ColumnName="Activated" />
+                <ScalarProperty Name="IsEmailVerified" ColumnName="IsEmailVerified" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

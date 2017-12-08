@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglePcActivationDemo.App", "SinglePcActivationDemo.App\SinglePcActivationDemo.App.csproj", "{326BED55-6726-46D1-8B51-3D204FFA5C56}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SinglePcActivationDemo.Database", "SinglePcActivationDemo.Database\SinglePcActivationDemo.Database.sqlproj", "{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglePcActivationDemo.Web", "SinglePcActivationDemo.Web\SinglePcActivationDemo.Web.csproj", "{A472F374-D75F-4182-9FAC-55EF9D3489CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglePcActivationDemo.DataAccess", "SinglePcActivationDemo.DataAccess\SinglePcActivationDemo.DataAccess.csproj", "{50CE562E-512B-4836-979C-A2FC857E39FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglePcActivationDemo.Common", "SinglePcActivationDemo.Common\SinglePcActivationDemo.Common.csproj", "{85B40419-5742-4AE6-91C1-552549CA45D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B7638EC-C7C1-4C41-841E-95631940477B}"
+	ProjectSection(SolutionItems) = preProject
+		SinglePcActivationDemoDb.bak = SinglePcActivationDemoDb.bak
+		SinglePcActivationDemoDb.sql = SinglePcActivationDemoDb.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gmpatel.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = SinglePcActivationDemo.App\\SinglePcActivationDemo.App.csproj
+		SccProjectName0 = SinglePcActivationDemo.App
+		SccLocalPath0 = SinglePcActivationDemo.App
+		SccProjectUniqueName1 = SinglePcActivationDemo.Database\\SinglePcActivationDemo.Database.sqlproj
+		SccProjectName1 = SinglePcActivationDemo.Database
+		SccLocalPath1 = SinglePcActivationDemo.Database
+		SccProjectUniqueName2 = SinglePcActivationDemo.Web\\SinglePcActivationDemo.Web.csproj
+		SccProjectName2 = SinglePcActivationDemo.Web
+		SccLocalPath2 = SinglePcActivationDemo.Web
+		SccProjectUniqueName3 = SinglePcActivationDemo.DataAccess\\SinglePcActivationDemo.DataAccess.csproj
+		SccProjectName3 = SinglePcActivationDemo.DataAccess
+		SccLocalPath3 = SinglePcActivationDemo.DataAccess
+		SccProjectUniqueName4 = SinglePcActivationDemo.Common\\SinglePcActivationDemo.Common.csproj
+		SccProjectName4 = SinglePcActivationDemo.Common
+		SccLocalPath4 = SinglePcActivationDemo.Common
+		SccLocalPath5 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{326BED55-6726-46D1-8B51-3D204FFA5C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326BED55-6726-46D1-8B51-3D204FFA5C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326BED55-6726-46D1-8B51-3D204FFA5C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326BED55-6726-46D1-8B51-3D204FFA5C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD234E2-FB68-4333-B3D3-986F5DED5FD8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A472F374-D75F-4182-9FAC-55EF9D3489CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A472F374-D75F-4182-9FAC-55EF9D3489CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A472F374-D75F-4182-9FAC-55EF9D3489CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A472F374-D75F-4182-9FAC-55EF9D3489CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CE562E-512B-4836-979C-A2FC857E39FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CE562E-512B-4836-979C-A2FC857E39FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CE562E-512B-4836-979C-A2FC857E39FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CE562E-512B-4836-979C-A2FC857E39FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B40419-5742-4AE6-91C1-552549CA45D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B40419-5742-4AE6-91C1-552549CA45D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B40419-5742-4AE6-91C1-552549CA45D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B40419-5742-4AE6-91C1-552549CA45D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

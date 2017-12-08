@@ -1,0 +1,36 @@
+﻿<Window x:Class="SinglePcActivationDemo.App.Activation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SinglePcActivationDemo.App"
+        mc:Ignorable="d"
+        Title="Activation" Height="203.909" Width="417.364">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Column="1" Grid.Row="0" TextAlignment="Left" VerticalAlignment="Center" Margin="10px">Application Activation</TextBlock>
+
+        <Grid Grid.Column="1" Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="ButtonActivate" Grid.Column="0" Margin="10px" Click="ButtonActivate_Click">Activate</Button>
+            <Button x:Name="ButtonCancel" Grid.Column="1" Margin="10px" Click="ButtonCancel_Click">Cancel</Button>
+        </Grid>
+    </Grid>
+</Window>
